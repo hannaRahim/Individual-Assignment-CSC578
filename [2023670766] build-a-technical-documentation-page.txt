@@ -1,0 +1,197 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Documentation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>JavaScript Documentation</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Variables">Variables</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Loops">Loops</a>
+    <a class="nav-link" href="#Arrays">Arrays</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a versatile scripting language used to create dynamic content on web pages.</p>
+      <p>It runs in the browser and enables features like interactivity, animations, and asynchronous operations.</p>
+      <code>console.log("Hello, world!");</code>
+      <p>It was created in just 10 days by Brendan Eich in 1995.</p>
+      <p>JavaScript can also be used on the server side with environments like Node.js.</p>
+      <ul>
+        <li>Client-side scripting</li>
+        <li>Server-side support</li>
+        <li>Event-driven</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables store data values that can be changed later.</p>
+      <p>JavaScript supports `var`, `let`, and `const` keywords to declare variables.</p>
+      <code>let name = "Siti";</code>
+      <p>`let` and `const` are block scoped, while `var` is function scoped.</p>
+      <p>Always prefer `let` and `const` over `var` for modern JS.</p>
+      <ul>
+        <li>Use `let` for variables that change</li>
+        <li>Use `const` for constants</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions allow you to encapsulate code for reuse.</p>
+      <p>You can define functions using function declarations or arrow functions.</p>
+      <code>function greet() { return "Hello"; }</code>
+      <code>const add = (a, b) => a + b;</code>
+      <p>Functions can return values and accept parameters.</p>
+      <p>They help keep your code modular and maintainable.</p>
+      <ul>
+        <li>Function declaration</li>
+        <li>Arrow functions</li>
+        <li>Callback functions</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Loops help you run the same code multiple times.</p>
+      <p>JavaScript supports for, while, and do-while loops.</p>
+      <code>for (let i = 0; i < 5; i++) { console.log(i); }</code>
+      <code>while (i < 5) { i++; }</code>
+      <p>Loops are essential in iterating over data or repeating actions.</p>
+      <p>Use loops responsibly to avoid infinite loops.</p>
+      <ul>
+        <li>for loop</li>
+        <li>while loop</li>
+        <li>do...while loop</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Arrays">
+      <header>Arrays</header>
+      <p>Arrays store multiple values in a single variable.</p>
+      <p>You can access elements using their index.</p>
+      <code>let fruits = ["apple", "banana", "cherry"];</code>
+      <code>console.log(fruits[0]);</code>
+      <p>JavaScript arrays have many built-in methods like push, pop, and map.</p>
+      <p>Arrays are zero-indexed and dynamically typed.</p>
+      <ul>
+        <li>Access via index</li>
+        <li>Use push/pop</li>
+        <li>Loop through arrays</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-color: #f4f4f4;
+}
+
+#navbar {
+  min-width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+#main-doc {
+  margin-left: 270px;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.main-section {
+  margin-bottom: 50px;
+}
+
+.main-section header {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  margin: 10px 0;
+  color: #555;
+}
+
+code {
+  display: block;
+  background: #eee;
+  padding: 10px;
+  margin: 10px 0;
+  border-left: 4px solid #2c3e50;
+  font-family: monospace;
+}
+
+ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}
+
+
+** end of styles.css **
+
