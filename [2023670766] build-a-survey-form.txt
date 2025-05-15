@@ -1,0 +1,65 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Learning Survey Form</title>
+</head>
+<body>
+
+  <h1 id="title">Online Learning Experience Form</h1>
+  <p id="description"><i>Thank you for taking the time to help us improve your online learning experience.</i>
+  </p>
+  
+  <!--3-->
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+    <label for="email" id="email-label">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+    <label for="number" id="number-label">Age:</label><br>
+    <input type="number" id="number" min="10" max="100" step="1" placeholder="Enter your age" required><br><br>
+
+    <label for="dropdown">Choose your current role</label><br>
+    <select id="dropdown" name="role" required>
+      <option value="" disabled selected>Select your role</option>
+      <option value="student">Student</option>
+      <option value="teacher">Teacher</option>
+      <option value="parent">Parent</option>
+      <option value="lifelong learner">Lifelong Learner</option>
+    </select><br><br>
+
+    <p>How satisfied are you with your online learning experience?</p>
+    <label><input type="radio" name="satisfaction" value="excelent" required>Excelent</label><br>
+    <label><input type="radio" name="satisfaction" value="good" required>Good</label><br>
+    <label><input type="radio" name="satisfaction" value="okay" required>Okay</label><br>
+    <label><input type="radio" name="satisfaction" value="bad" required>Bad</label><br>
+    <label><input type="radio" name="satisfaction" value="poor" required>Poor</label><br>
+
+    <p>Which devices do you use for online learning?</p>
+    <label><input type="checkbox" name="device" value="laptop"> Laptop</label><br>
+    <label><input type="checkbox" name="device" value="tablet"> Tablet</label><br>
+    <label><input type="checkbox" name="device" value="smartphone"> Smartphone</label><br>
+    <label><input type="checkbox" name="device" value="desktop"> Desktop Computer</label><br><br>
+
+    <label for="feedback">Please share any difficulties you faced during online learning.</label><br>
+    <textarea id="feedback" name="feedback" rows="5" cols="40" placeholder="Your feedback here..." required></textarea><br><br>
+
+    <button type="submit" id="submit">Submit</button>
+   
+  </form>
+ 
+
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+
+
+** end of undefined **
+
